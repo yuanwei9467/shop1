@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50714
 File Encoding         : 65001
 
-Date: 2017-08-16 17:21:59
+Date: 2017-08-18 17:07:39
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -331,7 +331,7 @@ CREATE TABLE `verydows_goods` (
   `goods_sn` char(20) NOT NULL DEFAULT '',
   `now_price` decimal(10,2) unsigned NOT NULL DEFAULT '0.00',
   `original_price` decimal(10,2) unsigned NOT NULL DEFAULT '0.00',
-  `goods_image` varchar(30) NOT NULL DEFAULT '',
+  `goods_image` varchar(300) NOT NULL DEFAULT '',
   `goods_brief` text NOT NULL,
   `goods_content` text NOT NULL,
   `goods_weight` decimal(10,2) unsigned NOT NULL DEFAULT '0.00',
@@ -346,11 +346,31 @@ CREATE TABLE `verydows_goods` (
   PRIMARY KEY (`goods_id`),
   KEY `cate_id` (`cate_id`),
   FULLTEXT KEY `indexing` (`goods_name`,`meta_keywords`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=22 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of verydows_goods
 -- ----------------------------
+INSERT INTO `verydows_goods` VALUES ('20', '1', '0', '华为 HUAWEI Nova (CAZ-AL10) 全网通版', '00100219953', '2099.00', '0.00', 'http://demo.verydows.com/upload/goods/prime/150x150/485826a56b10398.jpg', '精美金属机身，舒适握感！4K高清视频拍摄！美颜自拍！DTS音效！张艺兴，关晓彤的选择！', '<div class=\"content\"><p style=\"text-align: center;\"><img src=\"http://demo.verydows.com/upload/goods/editor/1611/5826a662b4f22Dw8GRU7cJ568921.jpg\" _src=\"http://demo.verydows.com/upload/goods/editor/1611/5826a662b4f22Dw8GRU7cJ568921.jpg\"/></p></div>', '0.00', '100', '华为 HUAWEI Nova (CAZ-AL10) 全网通版', '华为 HUAWEI Nova (CAZ-AL10) 全网通版', '1503024243', '0', '0', '0', '1');
+INSERT INTO `verydows_goods` VALUES ('19', '1', '0', 'Apple iPhone 7 (A1660) 国行版', '00100117376', '5199.00', '0.00', 'http://demo.verydows.com/upload/goods/prime/150x150/3858269ea7d1c9f.jpg', '', '<div class=\"content\"><div style=\"text-align:center\"><p><img src=\"http://demo.verydows.com/upload/goods/editor/1611/58269f91f3b9b2VpJYC3XAE50145.jpg\" _src=\"http://demo.verydows.com/upload/goods/editor/1611/58269f91f3b9b2VpJYC3XAE50145.jpg\" style=\"\"/></p><p><img src=\"http://demo.verydows.com/upload/goods/editor/1611/58269f9632bf6ytEal405iH30662.jpg\" _src=\"http://demo.verydows.com/upload/goods/editor/1611/58269f9632bf6ytEal405iH30662.jpg\" style=\"\"/></p><p><img src=\"http://demo.verydows.com/upload/goods/editor/1611/58269f9cc7a2fbJOx0R7N8X67972.jpg\" _src=\"http://demo.verydows.com/upload/goods/editor/1611/58269f9cc7a2fbJOx0R7N8X67972.jpg\" style=\"\"/></p><p><img src=\"http://demo.verydows.com/upload/goods/editor/1611/58269fa2500b2oH9pZarjJO59866.jpg\" _src=\"http://demo.verydows.com/upload/goods/editor/1611/58269fa2500b2oH9pZarjJO59866.jpg\" style=\"\"/></p><p><img src=\"http://demo.verydows.com/upload/goods/editor/1611/58269fa65620fuhvobJ8qHk91264.jpg\" _src=\"http://demo.verydows.com/upload/goods/editor/1611/58269fa65620fuhvobJ8qHk91264.jpg\" style=\"\"/></p></div>', '0.00', '100', 'Apple iPhone 7 (A1660) 国行版', 'Apple iPhone 7 (A1660) 国行版', '1503024254', '0', '0', '0', '1');
+INSERT INTO `verydows_goods` VALUES ('16', '1', '0', 'Apple iPhone 6s Plus', '00100116500', '4688.00', '0.00', 'http://demo.verydows.com/upload/goods/prime/150x150/1656e6d17164926.jpg', '', '<div class=\"content\"></div>', '0.00', '100', 'Apple iPhone 6s Plus', 'Apple iPhone 6s Plus', '1503024254', '0', '0', '0', '1');
+INSERT INTO `verydows_goods` VALUES ('13', '1', '0', 'vivo Xplay5 全网通4G手机 4GB+128GB 双卡双待 香槟金', '00101513635', '3698.00', '0.00', 'http://demo.verydows.com/upload/goods/prime/150x150/1356e6c40a0d492.jpg', '', '<div class=\"content\"><div align=\"center\"><p><img src=\"http://demo.verydows.com/upload/goods/editor/56e6c6405bf3bw2T3JtxeM558784.jpg\"/></p><p><img src=\"http://demo.verydows.com/upload/goods/editor/56e6c64a81c98BuJ9V5C0D426836.jpg\"/></p></div>', '0.00', '100', 'vivo Xplay5 全网通4G手机 4GB+128GB 双卡双待 香槟金', 'vivo Xplay5 全网通4G手机 4GB+128GB 双卡双待 香槟金', '1503024254', '0', '0', '0', '1');
+INSERT INTO `verydows_goods` VALUES ('3', '1', '0', '小米4 MI4 2GB内存版 移动 联通 电信 4G手机', '0010033521', '1299.00', '0.00', 'http://demo.verydows.com/upload/goods/prime/150x150/356e2fa344ec51.jpg', '', '<div class=\"content\"><div align=\"center\"><p><img src=\"http://demo.verydows.com/upload/goods/editor/56e2fad802f73JXclAK3DV07838.jpg\"/></p><p><img src=\"http://demo.verydows.com/upload/goods/editor/56e2fae1ea2e2F6Y1lpxjE250520.jpg\"/></p><p><img src=\"http://demo.verydows.com/upload/goods/editor/56e2fae836e9fugT70NKaUe75951.jpg\"/></p></div>', '0.00', '100', '小米4 MI4 2GB内存版 移动 联通 电信 4G手机', '小米4 MI4 2GB内存版 移动 联通 电信 4G手机', '1503024254', '0', '0', '0', '1');
+INSERT INTO `verydows_goods` VALUES ('2', '1', '0', '华为 Mate8 3GB+32GB版 全网通 移动版 月光银 苍穹灰', '0010022030', '2999.00', '0.00', 'http://demo.verydows.com/upload/goods/prime/150x150/256e2f30e7256c.jpg', '', '<div class=\"content\"><div align=\"center\"><p><img src=\"http://demo.verydows.com/upload/goods/editor/56e2f2abed2195dHIXDVxa295565.jpg\"/></p><p><img src=\"http://demo.verydows.com/upload/goods/editor/56e2f26836850PvsUtf5CjI32491.jpg\"/></p></div>', '0.00', '100', '华为 Mate8 3GB+32GB版 全网通 移动版 月光银 苍穹灰', '华为 Mate8 3GB+32GB版 全网通 移动版 月光银 苍穹灰', '1503024255', '0', '0', '0', '1');
+INSERT INTO `verydows_goods` VALUES ('1', '1', '0', 'Apple iPhone 6s (A1700) 移动联通电信4G手机', '0010011563', '4888.00', '0.00', 'http://demo.verydows.com/upload/goods/prime/150x150/156e2d4fa488d0.jpg', '', '<div class=\"content\"><div align=\"center\"><p><img src=\"http://demo.verydows.com/upload/goods/editor/56e2daaf5dc64IiTXQnmG6Z66363.jpg\"/></p><p><img src=\"http://demo.verydows.com/upload/goods/editor/56e2dc22524ec5iENqzFsIB51238.jpg\"/></p><p><img src=\"http://demo.verydows.com/upload/goods/editor/56e2dc2ed68dbTJKr2HGiBQ34101.jpg\"/></p></div>', '0.00', '100', 'Apple iPhone 6s (A1700) 移动联通电信4G手机', 'Apple iPhone 6s (A1700) 移动联通电信4G手机', '1503024255', '0', '0', '0', '1');
+INSERT INTO `verydows_goods` VALUES ('21', '2', '0', 'Teclast/台电 Tbook16s 64GB平板电脑二合一 Win10 双系统 11.6英寸', '00801920813', '1679.00', '0.00', 'http://demo.verydows.com/upload/goods/prime/150x150/2258291084d0330.jpg', '', '<div class=\"content\"><div style=\"text-align: center;\"><p><img src=\"http://demo.verydows.com/upload/goods/editor/1611/582910e7a171fSlIJ76QfM512361.jpg\" _src=\"http://demo.verydows.com/upload/goods/editor/1611/582910e7a171fSlIJ76QfM512361.jpg\" style=\"\"/></p><p><img src=\"http://demo.verydows.com/upload/goods/editor/1611/582910eb76dd0MjiUoWEGkI75987.jpg\" _src=\"http://demo.verydows.com/upload/goods/editor/1611/582910eb76dd0MjiUoWEGkI75987.jpg\" style=\"\"/></p><p><img src=\"http://demo.verydows.com/upload/goods/editor/1611/582910ed4e16f06SHLRFIUN36079.jpg\" _src=\"http://demo.verydows.com/upload/goods/editor/1611/582910ed4e16f06SHLRFIUN36079.jpg\" style=\"\"/></p></div>', '0.00', '100', 'Teclast/台电 Tbook16s 64GB平板电脑二合一 Win10 双系统 11.6英寸', 'Teclast/台电 Tbook16s 64GB平板电脑二合一 Win10 双系统 11.6英寸', '1503024255', '0', '0', '0', '1');
+INSERT INTO `verydows_goods` VALUES ('17', '2', '0', '微软 Microsoft Surface Pro 3 平板电脑', '00801817082', '0.01', '0.00', 'http://demo.verydows.com/upload/goods/prime/150x150/1756e6d909b8a0c.jpg', '', '<div class=\"content\"><p><span style=\"font-size:16px\">i7i87i87i</span></p></div>', '0.00', '100', '微软 Microsoft Surface Pro 3 平板电脑', '微软 Microsoft Surface Pro 3 平板电脑', '1503024255', '0', '0', '0', '1');
+INSERT INTO `verydows_goods` VALUES ('9', '2', '0', '诺基亚（Nokia）N1 7.9英寸平板电脑', '0000009639', '1099.00', '0.00', 'http://demo.verydows.com/upload/goods/prime/150x150/956e4029db165b.jpg', '', '<div class=\"content\"><div align=\"center\"><p><img src=\"http://demo.verydows.com/upload/goods/editor/56e404e0a51a58MblFa9Jn152056.jpg\"/></p><p><img src=\"http://demo.verydows.com/upload/goods/editor/56e404e6555ca5o90xsbOah31334.jpg\"/></p><p><img src=\"http://demo.verydows.com/upload/goods/editor/56e404eb65c8bZyJVI760NU84987.jpg\"/></p><p><img src=\"http://demo.verydows.com/upload/goods/editor/56e404f152c6f6iFm8oWvgq47192.jpg\"/></p><p><img src=\"http://demo.verydows.com/upload/goods/editor/56e404f5ec67ffxakSiFUmN92775.jpg\"/></p></div>', '0.00', '100', '诺基亚（Nokia）N1 7.9英寸平板电脑', '诺基亚（Nokia）N1 7.9英寸平板电脑', '1503024255', '0', '0', '0', '1');
+INSERT INTO `verydows_goods` VALUES ('8', '2', '0', 'Apple iPad Air 2 MH0W2CH/A 9.7英寸平板电脑', '0080018206', '3288.00', '0.00', 'http://demo.verydows.com/upload/goods/prime/150x150/856e3fba434963.jpg', '', '<div class=\"content\"><div align=\"center\"><p><img src=\"http://demo.verydows.com/upload/goods/editor/56e4008736b14kWtqo0HygS54399.jpg\"/></p><p><img src=\"http://demo.verydows.com/upload/goods/editor/56e4008e6fc68FW01pSODne25515.jpg\"/></p><p><img src=\"http://demo.verydows.com/upload/goods/editor/56e40093ecb183MHgfX2PFV79431.jpg\"/></p></div>', '0.00', '100', 'Apple iPad Air 2 MH0W2CH/A 9.7英寸平板电脑', 'Apple iPad Air 2 MH0W2CH/A 9.7英寸平板电脑', '1503024255', '0', '0', '0', '1');
+INSERT INTO `verydows_goods` VALUES ('7', '2', '0', '三星(SAMSUNG)900X5L-K01 15.0英寸超薄笔记本电脑', '0070097259', '8999.00', '0.00', 'http://demo.verydows.com/upload/goods/prime/150x150/756e3f9459edf9.jpg', '', '<div class=\"content\"></div>', '0.00', '100', '三星(SAMSUNG)900X5L-K01 15.0英寸超薄笔记本电脑', '三星(SAMSUNG)900X5L-K01 15.0英寸超薄笔记本电脑', '1503024255', '0', '0', '0', '1');
+INSERT INTO `verydows_goods` VALUES ('6', '2', '0', '宏碁（acer）V3-372-P47B 13.3英寸轻薄笔记本电脑', '0070076922', '2999.00', '0.00', 'http://demo.verydows.com/upload/goods/prime/150x150/656e3f5f12fd03.jpg', '', '<div class=\"content\"><div align=\"center\"><p><img src=\"http://demo.verydows.com/upload/goods/editor/56e3f5d64aca8H4Ums25rXt87027.jpg\"/></p></div>', '0.00', '100', '宏碁（acer）V3-372-P47B 13.3英寸轻薄笔记本电脑', '宏碁（acer）V3-372-P47B 13.3英寸轻薄笔记本电脑', '1503024255', '0', '0', '0', '1');
+INSERT INTO `verydows_goods` VALUES ('5', '2', '0', '戴尔（DELL）Ins14MR-7508R 14.0英寸笔记本电脑 （i5-6200U 4G 500G Win10）', '0070065228', '4399.00', '0.00', 'http://demo.verydows.com/upload/goods/prime/150x150/556e3f1ea40b41.jpg', '', '<div class=\"content\"><div align=\"center\"><p><img src=\"http://demo.verydows.com/upload/goods/editor/56e3f3d10866cKyN8ADTlm775049.jpg\"/></p><p><img src=\"http://demo.verydows.com/upload/goods/editor/56e3f3d857b8fjc8pRygfUY79695.jpg\"/></p></div>', '0.00', '100', '戴尔（DELL）Ins14MR-7508R 14.0英寸笔记本电脑 （i5-6200U 4G 500G Win10）', '戴尔（DELL）Ins14MR-7508R 14.0英寸笔记本电脑 （i5-6200U 4G 500G Win10）', '1503024255', '0', '0', '0', '1');
+INSERT INTO `verydows_goods` VALUES ('4', '2', '0', 'Apple MacBook Air MJVE2CH/A 13.3英寸宽屏笔记本电脑', '0070014005', '6666.00', '0.00', 'http://demo.verydows.com/upload/goods/prime/150x150/456e3dfe6d22c1.jpg', '', '<div class=\"content\"><div align=\"center\"><p><img src=\"http://demo.verydows.com/upload/goods/editor/56e3df31c8fb7iRwAu3PbmC99819.jpg\" _src=\"http://demo.verydows.com/upload/goods/editor/56e3df31c8fb7iRwAu3PbmC99819.jpg\"/></p><p><img src=\"http://demo.verydows.com/upload/goods/editor/56e3df4023401NJv1Rc3LfM73993.jpg\" _src=\"http://demo.verydows.com/upload/goods/editor/56e3df4023401NJv1Rc3LfM73993.jpg\"/></p></div>', '0.00', '100', 'Apple MacBook Air MJVE2CH/A 13.3英寸宽屏笔记本电脑', 'Apple MacBook Air MJVE2CH/A 13.3英寸宽屏笔记本电脑', '1503024256', '0', '0', '0', '1');
+INSERT INTO `verydows_goods` VALUES ('15', '3', '0', '奥克斯 AUX KFR-25GW/FK01+3 1匹 挂壁式家用冷暖空调', '01401715715', '1499.00', '0.00', 'http://demo.verydows.com/upload/goods/prime/150x150/1556e6cf29b6bb6.jpg', '', '<div class=\"content\"></div>', '0.00', '100', '奥克斯 AUX KFR-25GW/FK01+3 1匹 挂壁式家用冷暖空调', '奥克斯 AUX KFR-25GW/FK01+3 1匹 挂壁式家用冷暖空调', '1503024256', '0', '0', '0', '1');
+INSERT INTO `verydows_goods` VALUES ('14', '3', '0', '美的 Midea KFR-51LW/WYAA2 2匹 除PM2.5超静音变频柜机 物联网版', '01401614386', '6699.00', '0.00', 'http://demo.verydows.com/upload/goods/prime/150x150/1456e6ccd6bdbd6.jpg', '', '<div class=\"content\"></div>', '0.00', '100', '美的 Midea KFR-51LW/WYAA2 2匹 除PM2.5超静音变频柜机 物联网版', '美的 Midea KFR-51LW/WYAA2 2匹 除PM2.5超静音变频柜机 物联网版', '1503024256', '0', '0', '0', '1');
+INSERT INTO `verydows_goods` VALUES ('12', '3', '0', '索尼 SONY U90 55英寸4K超高清 安卓5.0智能系统液晶电视', '00901212289', '8999.00', '0.00', 'http://demo.verydows.com/upload/goods/prime/150x150/1256e51f1dd0df2.jpg', '', '<div class=\"content\"><div align=\"center\"><p><img src=\"http://demo.verydows.com/upload/goods/editor/56e5203fa7fbeiAu3Jpt1BI19575.jpg\"/></p><p><img src=\"http://demo.verydows.com/upload/goods/editor/56e52045e8048Gui7A89S4Y21703.jpg\"/></p></div>', '0.00', '100', '索尼 SONY U90 55英寸4K超高清 安卓5.0智能系统液晶电视', '索尼 SONY U90 55英寸4K超高清 安卓5.0智能系统液晶电视', '1503024256', '0', '0', '0', '1');
+INSERT INTO `verydows_goods` VALUES ('11', '3', '0', '飞利浦 PHILIPS 48PFL5445/T3 48英寸 全高清LED智能电视', '00901111459', '2999.00', '0.00', 'http://demo.verydows.com/upload/goods/prime/150x150/1156e51cf0075f8.jpg', '', '<div class=\"content\"></div>', '0.00', '100', '飞利浦 PHILIPS 48PFL5445/T3 48英寸 全高清LED智能电视', '飞利浦 PHILIPS 48PFL5445/T3 48英寸 全高清LED智能电视', '1503024256', '0', '0', '0', '1');
+INSERT INTO `verydows_goods` VALUES ('10', '3', '0', '飞利浦 PHILIPS 49PFL3445/T3 49英寸 全高清LED液晶电视', '00901110039', '2399.00', '0.00', 'http://demo.verydows.com/upload/goods/prime/150x150/1056e5188b5e84e.jpg', '', '<div class=\"content\"><div align=\"center\"><p><img src=\"http://demo.verydows.com/upload/goods/editor/56e5197255a8dKT69YEHpMO28069.jpg\"/></p><p><img src=\"http://demo.verydows.com/upload/goods/editor/56e5196a0b5e2wgTuQ6I5Bd43172.jpg\"/></p></div>', '0.00', '100', '飞利浦 PHILIPS 49PFL3445/T3 49英寸 全高清LED液晶电视', '飞利浦 PHILIPS 49PFL3445/T3 49英寸 全高清LED液晶电视', '1503024256', '0', '0', '0', '1');
 
 -- ----------------------------
 -- Table structure for `verydows_goods_album`
@@ -359,13 +379,145 @@ DROP TABLE IF EXISTS `verydows_goods_album`;
 CREATE TABLE `verydows_goods_album` (
   `id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
   `goods_id` mediumint(8) unsigned NOT NULL,
-  `image` varchar(60) NOT NULL DEFAULT '',
+  `image` varchar(300) NOT NULL DEFAULT '',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=133 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of verydows_goods_album
 -- ----------------------------
+INSERT INTO `verydows_goods_album` VALUES ('1', '20', 'http://demo.verydows.com/upload/goods/prime/50x50/485826a56b10398.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('2', '20', 'http://demo.verydows.com/upload/goods/album/50x50/205826a58a76122.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('3', '20', 'http://demo.verydows.com/upload/goods/album/50x50/345826a58a81a63.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('4', '20', 'http://demo.verydows.com/upload/goods/album/50x50/515826a58a8d3db.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('5', '20', 'http://demo.verydows.com/upload/goods/album/50x50/575826a58a98643.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('6', '20', 'http://demo.verydows.com/upload/goods/album/50x50/235826a58aa2add.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('7', '19', 'http://demo.verydows.com/upload/goods/prime/50x50/3858269ea7d1c9f.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('8', '19', 'http://demo.verydows.com/upload/goods/album/50x50/5958269ed7d3d4d.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('9', '19', 'http://demo.verydows.com/upload/goods/album/50x50/3158269ed7c913b.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('10', '19', 'http://demo.verydows.com/upload/goods/album/50x50/9558269ed7be5af.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('11', '19', 'http://demo.verydows.com/upload/goods/album/50x50/3958269ed7b3ddd.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('12', '19', 'http://demo.verydows.com/upload/goods/album/50x50/2258269ed7a8d7a.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('13', '16', 'http://demo.verydows.com/upload/goods/prime/50x50/1656e6d17164926.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('14', '16', 'http://demo.verydows.com/upload/goods/album/50x50/56e6d17164f91PGQJUuEyrV97248.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('15', '16', 'http://demo.verydows.com/upload/goods/album/50x50/56e6d17164ee4EAzyl70sHQ5322.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('16', '16', 'http://demo.verydows.com/upload/goods/album/50x50/56e6d17164e20BpxUwMG6eC69216.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('17', '13', 'http://demo.verydows.com/upload/goods/prime/50x50/1356e6c40a0d492.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('18', '13', 'http://demo.verydows.com/upload/goods/album/50x50/56e6c40a0da8byXYOEBjsqz53057.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('19', '13', 'http://demo.verydows.com/upload/goods/album/50x50/56e6c40a0d9c8UVbCSzOqNW97722.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('20', '13', 'http://demo.verydows.com/upload/goods/album/50x50/56e6c40a0d901YOUSGBw2NA2184.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('21', '3', 'http://demo.verydows.com/upload/goods/prime/50x50/356e2fa344ec51.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('22', '3', 'http://demo.verydows.com/upload/goods/album/50x50/56e2fa344f384iqwXgUJ4OM64483.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('23', '3', 'http://demo.verydows.com/upload/goods/album/50x50/56e2fa344f2e0XPhivetwqd36656.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('24', '3', 'http://demo.verydows.com/upload/goods/album/50x50/56e2fa344f23ctCfyjL1WAZ46687.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('25', '3', 'http://demo.verydows.com/upload/goods/album/50x50/56e2fa344f195JtQsiem0Hy2366.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('26', '3', 'http://demo.verydows.com/upload/goods/album/50x50/56e2fa344f0eamoiRIGQUST26183.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('27', '3', 'http://demo.verydows.com/upload/goods/album/50x50/56e2fa344f02cY1uRU7wkr339310.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('28', '2', 'http://demo.verydows.com/upload/goods/prime/50x50/256e2f30e7256c.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('29', '2', 'http://demo.verydows.com/upload/goods/album/50x50/56e2f30e72928BSOzT93IkP9639.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('30', '2', 'http://demo.verydows.com/upload/goods/album/50x50/56e2f30e729e9TJ9pqaSYQZ87527.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('31', '2', 'http://demo.verydows.com/upload/goods/album/50x50/56e2f30e72a98gP0RSdCui37720.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('32', '2', 'http://demo.verydows.com/upload/goods/album/50x50/56e2f30e72b41PyGKWtfZ0311691.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('33', '2', 'http://demo.verydows.com/upload/goods/album/50x50/56e2f5332bff4rao5t7snf261816.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('34', '2', 'http://demo.verydows.com/upload/goods/album/50x50/56e2f5332c0d0YT4xyB0kAd82509.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('35', '1', 'http://demo.verydows.com/upload/goods/prime/50x50/156e2d4fa488d0.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('36', '1', 'http://demo.verydows.com/upload/goods/album/50x50/56e2d943368b959ynGbQ7lW80201.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('37', '1', 'http://demo.verydows.com/upload/goods/album/50x50/56e2d94336995XcJQWpDSwE86673.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('38', '21', 'http://demo.verydows.com/upload/goods/prime/50x50/2258291084d0330.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('39', '21', 'http://demo.verydows.com/upload/goods/album/50x50/27582910926e671.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('40', '21', 'http://demo.verydows.com/upload/goods/album/50x50/5058291092805a4.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('41', '21', 'http://demo.verydows.com/upload/goods/album/50x50/82582910928cd57.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('42', '17', 'http://demo.verydows.com/upload/goods/prime/50x50/1756e6d909b8a0c.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('43', '17', 'http://demo.verydows.com/upload/goods/album/50x50/56e6d909b8fcc1kSndBiq8G49254.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('44', '17', 'http://demo.verydows.com/upload/goods/album/50x50/56e6d909b8f00X5n7MsSVcP12157.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('45', '9', 'http://demo.verydows.com/upload/goods/prime/50x50/956e4029db165b.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('46', '9', 'http://demo.verydows.com/upload/goods/album/50x50/56e4029db1a5aVK73Qd4kRY44539.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('47', '9', 'http://demo.verydows.com/upload/goods/album/50x50/56e4029db1b2dYKsE8d9bl265913.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('48', '9', 'http://demo.verydows.com/upload/goods/album/50x50/56e4029db1bdc2SgAQe8DhX13870.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('49', '9', 'http://demo.verydows.com/upload/goods/album/50x50/56e4029db1c85GtqHLd9bfO22887.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('50', '9', 'http://demo.verydows.com/upload/goods/album/50x50/56e4029db1d36cjQ02S4wRx84896.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('51', '8', 'http://demo.verydows.com/upload/goods/prime/50x50/856e3fba434963.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('52', '8', 'http://demo.verydows.com/upload/goods/album/50x50/56e3fba434df3FvpI1ea2z011388.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('53', '8', 'http://demo.verydows.com/upload/goods/album/50x50/56e3fba434ebdgGnoHcM62f69789.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('54', '8', 'http://demo.verydows.com/upload/goods/album/50x50/56e3fba434f6bOk0oljHqRg88606.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('55', '7', 'http://demo.verydows.com/upload/goods/prime/50x50/756e3f9459edf9.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('56', '7', 'http://demo.verydows.com/upload/goods/album/50x50/56e3f9459f26416pkIfzRxL94522.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('57', '7', 'http://demo.verydows.com/upload/goods/album/50x50/56e3f9459f329V1m5ivX80J61533.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('58', '7', 'http://demo.verydows.com/upload/goods/album/50x50/56e3f9459f3d75RjAoGYxNI60323.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('59', '6', 'http://demo.verydows.com/upload/goods/prime/50x50/656e3f5f12fd03.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('60', '6', 'http://demo.verydows.com/upload/goods/album/50x50/56e3f5f13024fewM0GFa5Vt49870.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('61', '6', 'http://demo.verydows.com/upload/goods/album/50x50/56e3f5f13032bKUPf8uecMz91660.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('62', '6', 'http://demo.verydows.com/upload/goods/album/50x50/56e3f5f1303d9oYudLMSe7y99233.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('63', '6', 'http://demo.verydows.com/upload/goods/album/50x50/56e3f5f130486e4w0WSoUmZ13763.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('64', '5', 'http://demo.verydows.com/upload/goods/prime/50x50/556e3f1ea40b41.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('65', '5', 'http://demo.verydows.com/upload/goods/album/50x50/56e3f1ea40f58mkRSp4lMJA2728.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('66', '5', 'http://demo.verydows.com/upload/goods/album/50x50/56e3f1ea4101alQtjuWg7G16579.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('67', '5', 'http://demo.verydows.com/upload/goods/album/50x50/56e3f1ea410c87IodqvTUXH31299.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('68', '5', 'http://demo.verydows.com/upload/goods/album/50x50/56e3f1ea41174sdoGeHNpL541450.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('69', '4', 'http://demo.verydows.com/upload/goods/prime/50x50/456e3dfe6d22c1.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('70', '4', 'http://demo.verydows.com/upload/goods/album/50x50/56e3dfe6d279cuDlyS83YL155115.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('71', '4', 'http://demo.verydows.com/upload/goods/album/50x50/56e3dfe6d288aDoQdTKf6nJ56044.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('72', '15', 'http://demo.verydows.com/upload/goods/prime/50x50/1556e6cf29b6bb6.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('73', '15', 'http://demo.verydows.com/upload/goods/album/50x50/56e6cf29b71afKUwdtDvquI21134.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('74', '15', 'http://demo.verydows.com/upload/goods/album/50x50/56e6cf29b729907TybLOFhI8230.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('75', '14', 'http://demo.verydows.com/upload/goods/prime/50x50/1456e6ccd6bdbd6.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('76', '14', 'http://demo.verydows.com/upload/goods/album/50x50/56e6ccd6bdfeeayuY1i63oD43514.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('77', '14', 'http://demo.verydows.com/upload/goods/album/50x50/56e6ccd6be0b0hc3qve6I0Z69833.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('78', '14', 'http://demo.verydows.com/upload/goods/album/50x50/56e6ccd6be15cY3SmyQldF512516.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('79', '12', 'http://demo.verydows.com/upload/goods/prime/50x50/1256e51f1dd0df2.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('80', '12', 'http://demo.verydows.com/upload/goods/album/50x50/56e51f1dd11f741p2ygvBAq21097.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('81', '12', 'http://demo.verydows.com/upload/goods/album/50x50/56e51f1dd12bf5cX4uhmtb368719.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('82', '11', 'http://demo.verydows.com/upload/goods/prime/50x50/1156e51cf0075f8.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('83', '11', 'http://demo.verydows.com/upload/goods/album/50x50/56e51cf0079a7JE9oKl0Njz63104.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('84', '11', 'http://demo.verydows.com/upload/goods/album/50x50/56e51cf007a6aBOfzmsalQE58255.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('85', '10', 'http://demo.verydows.com/upload/goods/prime/50x50/1056e5188b5e84e.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('86', '10', 'http://demo.verydows.com/upload/goods/album/50x50/56e5188b5ed92nkGi16usrt831.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('87', '10', 'http://demo.verydows.com/upload/goods/album/50x50/56e5188b5ee5cX8rRQBv4Gh26528.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('88', '10', 'http://demo.verydows.com/upload/goods/album/50x50/56e5188b5ef0asHY8fUuQv198815.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('89', '7', 'http://demo.verydows.com/upload/goods/prime/50x50/756e3f9459edf9.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('90', '7', 'http://demo.verydows.com/upload/goods/album/50x50/56e3f9459f26416pkIfzRxL94522.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('91', '7', 'http://demo.verydows.com/upload/goods/album/50x50/56e3f9459f329V1m5ivX80J61533.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('92', '7', 'http://demo.verydows.com/upload/goods/album/50x50/56e3f9459f3d75RjAoGYxNI60323.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('93', '6', 'http://demo.verydows.com/upload/goods/prime/50x50/656e3f5f12fd03.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('94', '6', 'http://demo.verydows.com/upload/goods/album/50x50/56e3f5f13024fewM0GFa5Vt49870.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('95', '6', 'http://demo.verydows.com/upload/goods/album/50x50/56e3f5f13032bKUPf8uecMz91660.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('96', '6', 'http://demo.verydows.com/upload/goods/album/50x50/56e3f5f1303d9oYudLMSe7y99233.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('97', '6', 'http://demo.verydows.com/upload/goods/album/50x50/56e3f5f130486e4w0WSoUmZ13763.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('98', '5', 'http://demo.verydows.com/upload/goods/prime/50x50/556e3f1ea40b41.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('99', '5', 'http://demo.verydows.com/upload/goods/album/50x50/56e3f1ea40f58mkRSp4lMJA2728.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('100', '5', 'http://demo.verydows.com/upload/goods/album/50x50/56e3f1ea4101alQtjuWg7G16579.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('101', '5', 'http://demo.verydows.com/upload/goods/album/50x50/56e3f1ea410c87IodqvTUXH31299.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('102', '5', 'http://demo.verydows.com/upload/goods/album/50x50/56e3f1ea41174sdoGeHNpL541450.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('103', '4', 'http://demo.verydows.com/upload/goods/prime/50x50/456e3dfe6d22c1.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('104', '4', 'http://demo.verydows.com/upload/goods/album/50x50/56e3dfe6d279cuDlyS83YL155115.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('105', '4', 'http://demo.verydows.com/upload/goods/album/50x50/56e3dfe6d288aDoQdTKf6nJ56044.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('106', '21', 'http://demo.verydows.com/upload/goods/prime/50x50/2258291084d0330.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('107', '21', 'http://demo.verydows.com/upload/goods/album/50x50/27582910926e671.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('108', '21', 'http://demo.verydows.com/upload/goods/album/50x50/5058291092805a4.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('109', '21', 'http://demo.verydows.com/upload/goods/album/50x50/82582910928cd57.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('110', '17', 'http://demo.verydows.com/upload/goods/prime/50x50/1756e6d909b8a0c.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('111', '17', 'http://demo.verydows.com/upload/goods/album/50x50/56e6d909b8fcc1kSndBiq8G49254.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('112', '17', 'http://demo.verydows.com/upload/goods/album/50x50/56e6d909b8f00X5n7MsSVcP12157.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('113', '9', 'http://demo.verydows.com/upload/goods/prime/50x50/956e4029db165b.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('114', '9', 'http://demo.verydows.com/upload/goods/album/50x50/56e4029db1a5aVK73Qd4kRY44539.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('115', '9', 'http://demo.verydows.com/upload/goods/album/50x50/56e4029db1b2dYKsE8d9bl265913.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('116', '9', 'http://demo.verydows.com/upload/goods/album/50x50/56e4029db1bdc2SgAQe8DhX13870.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('117', '9', 'http://demo.verydows.com/upload/goods/album/50x50/56e4029db1c85GtqHLd9bfO22887.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('118', '9', 'http://demo.verydows.com/upload/goods/album/50x50/56e4029db1d36cjQ02S4wRx84896.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('119', '8', 'http://demo.verydows.com/upload/goods/prime/50x50/856e3fba434963.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('120', '8', 'http://demo.verydows.com/upload/goods/album/50x50/56e3fba434df3FvpI1ea2z011388.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('121', '8', 'http://demo.verydows.com/upload/goods/album/50x50/56e3fba434ebdgGnoHcM62f69789.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('122', '8', 'http://demo.verydows.com/upload/goods/album/50x50/56e3fba434f6bOk0oljHqRg88606.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('123', '12', 'http://demo.verydows.com/upload/goods/prime/50x50/1256e51f1dd0df2.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('124', '12', 'http://demo.verydows.com/upload/goods/album/50x50/56e51f1dd11f741p2ygvBAq21097.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('125', '12', 'http://demo.verydows.com/upload/goods/album/50x50/56e51f1dd12bf5cX4uhmtb368719.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('126', '11', 'http://demo.verydows.com/upload/goods/prime/50x50/1156e51cf0075f8.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('127', '11', 'http://demo.verydows.com/upload/goods/album/50x50/56e51cf0079a7JE9oKl0Njz63104.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('128', '11', 'http://demo.verydows.com/upload/goods/album/50x50/56e51cf007a6aBOfzmsalQE58255.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('129', '10', 'http://demo.verydows.com/upload/goods/prime/50x50/1056e5188b5e84e.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('130', '10', 'http://demo.verydows.com/upload/goods/album/50x50/56e5188b5ed92nkGi16usrt831.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('131', '10', 'http://demo.verydows.com/upload/goods/album/50x50/56e5188b5ee5cX8rRQBv4Gh26528.jpg');
+INSERT INTO `verydows_goods_album` VALUES ('132', '10', 'http://demo.verydows.com/upload/goods/album/50x50/56e5188b5ef0asHY8fUuQv198815.jpg');
 
 -- ----------------------------
 -- Table structure for `verydows_goods_attr`
@@ -394,11 +546,24 @@ CREATE TABLE `verydows_goods_cate` (
   `seq` tinyint(2) unsigned NOT NULL DEFAULT '99',
   PRIMARY KEY (`cate_id`),
   KEY `parent_id` (`parent_id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=14 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of verydows_goods_cate
 -- ----------------------------
+INSERT INTO `verydows_goods_cate` VALUES ('1', '0', '手机', '手机', '手机', '99');
+INSERT INTO `verydows_goods_cate` VALUES ('2', '0', '电脑', '电脑', '电脑', '99');
+INSERT INTO `verydows_goods_cate` VALUES ('3', '0', '家电', '家电', '家电', '99');
+INSERT INTO `verydows_goods_cate` VALUES ('4', '0', '汽车用品', '汽车用品', '汽车用品', '99');
+INSERT INTO `verydows_goods_cate` VALUES ('5', '0', '个护化妆', '个护化妆', '个护化妆', '99');
+INSERT INTO `verydows_goods_cate` VALUES ('6', '0', '珠宝饰品', '珠宝饰品', '珠宝饰品', '99');
+INSERT INTO `verydows_goods_cate` VALUES ('7', '0', '食品酒类', '食品酒类', '食品酒类', '99');
+INSERT INTO `verydows_goods_cate` VALUES ('8', '2', '平板电脑', '平板电脑', '平板电脑', '99');
+INSERT INTO `verydows_goods_cate` VALUES ('9', '2', '笔记本', '笔记本', '笔记本', '99');
+INSERT INTO `verydows_goods_cate` VALUES ('10', '3', '电视', '电视', '电视', '99');
+INSERT INTO `verydows_goods_cate` VALUES ('11', '3', '空调', '空调', '空调', '99');
+INSERT INTO `verydows_goods_cate` VALUES ('12', '6', '项链', '项链', '项链', '99');
+INSERT INTO `verydows_goods_cate` VALUES ('13', '6', '手链', '手链', '手链', '99');
 
 -- ----------------------------
 -- Table structure for `verydows_goods_cate_attr`
@@ -444,11 +609,84 @@ CREATE TABLE `verydows_goods_optional` (
   `opt_price` decimal(10,2) unsigned NOT NULL DEFAULT '0.00',
   PRIMARY KEY (`id`),
   KEY `goods_id` (`goods_id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=656 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of verydows_goods_optional
 -- ----------------------------
+INSERT INTO `verydows_goods_optional` VALUES ('583', '239', '20', '64GB', '300.00');
+INSERT INTO `verydows_goods_optional` VALUES ('584', '239', '20', '32GB', '0.00');
+INSERT INTO `verydows_goods_optional` VALUES ('585', '240', '20', '香槟金(白)', '0.00');
+INSERT INTO `verydows_goods_optional` VALUES ('586', '240', '20', '香槟金(黑)', '0.00');
+INSERT INTO `verydows_goods_optional` VALUES ('587', '240', '20', '玫瑰金', '0.00');
+INSERT INTO `verydows_goods_optional` VALUES ('588', '240', '20', '皓月银', '0.00');
+INSERT INTO `verydows_goods_optional` VALUES ('589', '241', '20', '64GB', '300.00');
+INSERT INTO `verydows_goods_optional` VALUES ('590', '241', '20', '32GB', '0.00');
+INSERT INTO `verydows_goods_optional` VALUES ('591', '242', '20', '香槟金(白)', '0.00');
+INSERT INTO `verydows_goods_optional` VALUES ('592', '242', '20', '香槟金(黑)', '0.00');
+INSERT INTO `verydows_goods_optional` VALUES ('593', '242', '20', '玫瑰金', '0.00');
+INSERT INTO `verydows_goods_optional` VALUES ('594', '242', '20', '皓月银', '0.00');
+INSERT INTO `verydows_goods_optional` VALUES ('595', '243', '19', '银色', '0.00');
+INSERT INTO `verydows_goods_optional` VALUES ('596', '243', '19', '金色', '0.00');
+INSERT INTO `verydows_goods_optional` VALUES ('597', '243', '19', '玫瑰金', '0.00');
+INSERT INTO `verydows_goods_optional` VALUES ('598', '243', '19', '亮黑色', '0.00');
+INSERT INTO `verydows_goods_optional` VALUES ('599', '243', '19', '黑色', '0.00');
+INSERT INTO `verydows_goods_optional` VALUES ('600', '244', '19', '256GB', '1500.00');
+INSERT INTO `verydows_goods_optional` VALUES ('601', '244', '19', '128GB', '800.00');
+INSERT INTO `verydows_goods_optional` VALUES ('602', '244', '19', '32GB', '0.00');
+INSERT INTO `verydows_goods_optional` VALUES ('603', '245', '16', '128G', '1800.00');
+INSERT INTO `verydows_goods_optional` VALUES ('604', '245', '16', '64G', '800.00');
+INSERT INTO `verydows_goods_optional` VALUES ('605', '245', '16', '16G', '0.00');
+INSERT INTO `verydows_goods_optional` VALUES ('606', '246', '16', '银色', '0.00');
+INSERT INTO `verydows_goods_optional` VALUES ('607', '246', '16', '深空灰', '0.00');
+INSERT INTO `verydows_goods_optional` VALUES ('608', '246', '16', '金色', '0.00');
+INSERT INTO `verydows_goods_optional` VALUES ('609', '246', '16', '玫瑰金', '0.00');
+INSERT INTO `verydows_goods_optional` VALUES ('610', '247', '16', '移动版', '0.00');
+INSERT INTO `verydows_goods_optional` VALUES ('611', '247', '16', '全网通', '200.00');
+INSERT INTO `verydows_goods_optional` VALUES ('612', '248', '3', '白色', '0.00');
+INSERT INTO `verydows_goods_optional` VALUES ('613', '248', '3', '黑色', '0.00');
+INSERT INTO `verydows_goods_optional` VALUES ('614', '249', '3', '联通', '0.00');
+INSERT INTO `verydows_goods_optional` VALUES ('615', '249', '3', '电信', '0.00');
+INSERT INTO `verydows_goods_optional` VALUES ('616', '249', '3', '移动', '0.00');
+INSERT INTO `verydows_goods_optional` VALUES ('617', '250', '2', '苍穹灰', '0.00');
+INSERT INTO `verydows_goods_optional` VALUES ('618', '250', '2', '月光银', '0.00');
+INSERT INTO `verydows_goods_optional` VALUES ('619', '251', '2', '移动版', '0.00');
+INSERT INTO `verydows_goods_optional` VALUES ('620', '251', '2', '全网通', '200.00');
+INSERT INTO `verydows_goods_optional` VALUES ('621', '252', '1', '银色', '0.00');
+INSERT INTO `verydows_goods_optional` VALUES ('622', '252', '1', '深空灰', '0.00');
+INSERT INTO `verydows_goods_optional` VALUES ('623', '252', '1', '金色', '0.00');
+INSERT INTO `verydows_goods_optional` VALUES ('624', '252', '1', '玫瑰金', '50.00');
+INSERT INTO `verydows_goods_optional` VALUES ('625', '253', '1', '16G', '0.00');
+INSERT INTO `verydows_goods_optional` VALUES ('626', '253', '1', '128G', '1700.00');
+INSERT INTO `verydows_goods_optional` VALUES ('627', '253', '1', '64G', '700.00');
+INSERT INTO `verydows_goods_optional` VALUES ('628', '254', '21', '官方标配', '0.00');
+INSERT INTO `verydows_goods_optional` VALUES ('629', '254', '21', '套餐一', '100.00');
+INSERT INTO `verydows_goods_optional` VALUES ('630', '254', '21', '套餐二', '200.00');
+INSERT INTO `verydows_goods_optional` VALUES ('631', '254', '21', '套餐三', '300.00');
+INSERT INTO `verydows_goods_optional` VALUES ('632', '255', '17', '专业版', '0.00');
+INSERT INTO `verydows_goods_optional` VALUES ('633', '255', '17', '中文版', '0.00');
+INSERT INTO `verydows_goods_optional` VALUES ('634', '256', '8', '银色', '0.00');
+INSERT INTO `verydows_goods_optional` VALUES ('635', '256', '8', '灰色', '100.00');
+INSERT INTO `verydows_goods_optional` VALUES ('636', '256', '8', '金色', '0.00');
+INSERT INTO `verydows_goods_optional` VALUES ('637', '257', '8', '128G WiFi版', '1500.00');
+INSERT INTO `verydows_goods_optional` VALUES ('638', '257', '8', '16G WiFi版', '0.00');
+INSERT INTO `verydows_goods_optional` VALUES ('639', '257', '8', '64G WiFi版', '700.00');
+INSERT INTO `verydows_goods_optional` VALUES ('640', '258', '4', '256G', '1333.00');
+INSERT INTO `verydows_goods_optional` VALUES ('641', '258', '4', '128G', '0.00');
+INSERT INTO `verydows_goods_optional` VALUES ('642', '259', '4', '256G', '1333.00');
+INSERT INTO `verydows_goods_optional` VALUES ('643', '259', '4', '128G', '0.00');
+INSERT INTO `verydows_goods_optional` VALUES ('644', '260', '21', '官方标配', '0.00');
+INSERT INTO `verydows_goods_optional` VALUES ('645', '260', '21', '套餐一', '100.00');
+INSERT INTO `verydows_goods_optional` VALUES ('646', '260', '21', '套餐二', '200.00');
+INSERT INTO `verydows_goods_optional` VALUES ('647', '260', '21', '套餐三', '300.00');
+INSERT INTO `verydows_goods_optional` VALUES ('648', '261', '17', '专业版', '0.00');
+INSERT INTO `verydows_goods_optional` VALUES ('649', '261', '17', '中文版', '0.00');
+INSERT INTO `verydows_goods_optional` VALUES ('650', '262', '8', '银色', '0.00');
+INSERT INTO `verydows_goods_optional` VALUES ('651', '262', '8', '灰色', '100.00');
+INSERT INTO `verydows_goods_optional` VALUES ('652', '262', '8', '金色', '0.00');
+INSERT INTO `verydows_goods_optional` VALUES ('653', '263', '8', '128G WiFi版', '1500.00');
+INSERT INTO `verydows_goods_optional` VALUES ('654', '263', '8', '16G WiFi版', '0.00');
+INSERT INTO `verydows_goods_optional` VALUES ('655', '263', '8', '64G WiFi版', '700.00');
 
 -- ----------------------------
 -- Table structure for `verydows_goods_optional_type`
@@ -456,13 +694,38 @@ CREATE TABLE `verydows_goods_optional` (
 DROP TABLE IF EXISTS `verydows_goods_optional_type`;
 CREATE TABLE `verydows_goods_optional_type` (
   `type_id` smallint(5) unsigned NOT NULL AUTO_INCREMENT,
-  `name` varchar(20) NOT NULL DEFAULT '',
+  `name` varchar(100) NOT NULL DEFAULT '',
   PRIMARY KEY (`type_id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=264 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of verydows_goods_optional_type
 -- ----------------------------
+INSERT INTO `verydows_goods_optional_type` VALUES ('239', '机身存储');
+INSERT INTO `verydows_goods_optional_type` VALUES ('240', '颜色');
+INSERT INTO `verydows_goods_optional_type` VALUES ('241', '机身存储');
+INSERT INTO `verydows_goods_optional_type` VALUES ('242', '颜色');
+INSERT INTO `verydows_goods_optional_type` VALUES ('243', '颜色');
+INSERT INTO `verydows_goods_optional_type` VALUES ('244', '机身存储');
+INSERT INTO `verydows_goods_optional_type` VALUES ('245', '机身存储');
+INSERT INTO `verydows_goods_optional_type` VALUES ('246', '颜色');
+INSERT INTO `verydows_goods_optional_type` VALUES ('247', '网络类型');
+INSERT INTO `verydows_goods_optional_type` VALUES ('248', '颜色');
+INSERT INTO `verydows_goods_optional_type` VALUES ('249', '网络类型');
+INSERT INTO `verydows_goods_optional_type` VALUES ('250', '颜色');
+INSERT INTO `verydows_goods_optional_type` VALUES ('251', '网络类型');
+INSERT INTO `verydows_goods_optional_type` VALUES ('252', '颜色');
+INSERT INTO `verydows_goods_optional_type` VALUES ('253', '机身存储');
+INSERT INTO `verydows_goods_optional_type` VALUES ('254', '版本');
+INSERT INTO `verydows_goods_optional_type` VALUES ('255', '版本');
+INSERT INTO `verydows_goods_optional_type` VALUES ('256', '颜色');
+INSERT INTO `verydows_goods_optional_type` VALUES ('257', '机身存储');
+INSERT INTO `verydows_goods_optional_type` VALUES ('258', '机身存储');
+INSERT INTO `verydows_goods_optional_type` VALUES ('259', '机身存储');
+INSERT INTO `verydows_goods_optional_type` VALUES ('260', '版本');
+INSERT INTO `verydows_goods_optional_type` VALUES ('261', '版本');
+INSERT INTO `verydows_goods_optional_type` VALUES ('262', '颜色');
+INSERT INTO `verydows_goods_optional_type` VALUES ('263', '机身存储');
 
 -- ----------------------------
 -- Table structure for `verydows_goods_related`
@@ -1066,3 +1329,5 @@ INSERT INTO `verydows_visitor_stats` VALUES ('', '127.0.0.1', '1502870423', '1',
 INSERT INTO `verydows_visitor_stats` VALUES ('', '127.0.0.1', '1502870460', '1', '', '1', '0', '');
 INSERT INTO `verydows_visitor_stats` VALUES ('', '127.0.0.1', '1502870621', '1', '', '1', '0', '');
 INSERT INTO `verydows_visitor_stats` VALUES ('rbsfquca5q1riun4fb4nm8t0d1', '127.0.0.1', '1502870698', '2', '', '2', '0', '');
+INSERT INTO `verydows_visitor_stats` VALUES ('vsu9n975eq4eut295jot14acm3', '127.0.0.1', '1503038739', '1', '', '1', '0', '');
+INSERT INTO `verydows_visitor_stats` VALUES ('47261a37cf302a8acf6820e6099969b4', '114.251.205.2', '1502985600', '2', '127.0.0.1', '3', '1', '北京市');

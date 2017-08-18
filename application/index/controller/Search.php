@@ -18,7 +18,7 @@ class Search extends Base{
         $conditions = [
             'kw'=>$keyword
         ];
-        $goods_model->search($conditions = '',$limit = 10,$page=1);
-
+        $goods = $goods_model->search($conditions);
+        print_r($goods);
     }
 }
